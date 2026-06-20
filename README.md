@@ -10,12 +10,6 @@ A minimal Android demo app for **Kokoro-82M** TTS model in int8 quantization.
   Another UI thing I noticed was that the sliders for speak speed are not very high accuracy even though Kokoro supports any float, so I set them to go to the hundredths place.
   Finally, I decreased the build SDK to 34 (Android 14) so the prebuilt binary is slightly more compatible. You can still change this in Project/app/build.gradle.kts though.
 
-## Screenshot(s)
-<img width="1080" height="2340" alt="Single-model Kokoro-82M-Android-Fixed" src="https://github.com/user-attachments/assets/b5139579-c53c-4735-a568-36c2b8a31c14" />
-<img width="1080" height="2340" alt="Multi-model Top Kokoro-82M-Android-Fixed" src="https://github.com/user-attachments/assets/c29cd7b1-9a59-4fc3-b080-7cfe069dbd56" />
-<img width="1080" height="2340" alt="Multi-model Bottom Kokoro-82M-Android-Fixed" src="https://github.com/user-attachments/assets/08fe08aa-bb4e-460b-ae52-480bf2b1b322" />
-
-
 ## How to Build
 Download/install Android Studio (I used Panda, but some other IDE versions also work)
 Upgrade/downgrade to AGP 8.x (I used 8.13.2)
@@ -25,3 +19,8 @@ Build
 
 ## Prebuilt .apk files for Android
 See [release](https://github.com/CiteClimb/Kokoro-82M-Android-Fixed/releases/).
+
+## Screenshot(s)
+<img width="540" height="1170" alt="Single-model Kokoro-82M-Android-Fixed" src="https://github.com/user-attachments/assets/b5139579-c53c-4735-a568-36c2b8a31c14" />
+<img width="540" height="1170" alt="Multi-model Top Kokoro-82M-Android-Fixed" src="https://github.com/user-attachments/assets/c29cd7b1-9a59-4fc3-b080-7cfe069dbd56" />
+<img width="540" height="1170" alt="Multi-model Bottom Kokoro-82M-Android-Fixed" src="https://github.com/user-attachments/assets/08fe08aa-bb4e-460b-ae52-480bf2b1b322" />
