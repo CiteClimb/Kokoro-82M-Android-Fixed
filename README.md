@@ -1,0 +1,23 @@
+# Kokoro-82M-Android
+A minimal Android demo app for **Kokoro-82M** TTS model in int8 quantization.
+
+  Original version had a backend bug that closed the OrtSession after generating a single message, causing an error message to pop up after consecutive attempts to generate audio.
+  Original version also didn't fit my screen vertically in the Mixer tab, and could potentially not fit some screens vertically in the Home tab, so I decreased the height of the slider, the maxmimum line count of the Text to speak box to 10 in both, decreased the minimum to 1 in both, and also allowed the entire page to scroll up and down in both tabs in case even these vertical height optimizations aren't enough.
+  The tab icons were slightly misleading: the Home and Build icons for "Basic" and "Mixer". I have now made them "Single-model" with the Voice Selection icon and "Multi-model" with the Merge icon.
+  Many button labels were also misleading, like the "Apply Mix" button in the Mixer/Multi-model tab for example, which doesn't just apply the mix settings, but also generates audio from the text above and plays it.
+  Speaking of this tab, I changed the default mix to some very unique voices for contrast and to show how the mix combines multiple qualities.
+  Also, the spherical interolation implementation is broken, though I do not know why, so I will just mark it with [BROKEN] for now.
+  Another UI thing I noticed was that the sliders for speak speed are not very high accuracy even though Kokoro supports any float, so I set them to go to the hundredths place.
+  Finally, I decreased the build SDK to 34 (Android 14) so the prebuilt binary is slightly more compatible. You can still change this in Project/app/build.gradle.kts though.
+
+## Screenshot(s)
+
+## How to Build
+Download/install Android Studio (I used Panda, but some other IDE versions also work)
+Upgrade/downgrade to AGP 8.x (I used 8.13.2)
+Gradle Sync
+(If you want to, modify build and target SDK version in Project/app/build.gradle.kts)
+Build
+
+## Prebuilt .apk files for Android
+See [release](https://github.com/CiteClimb/Kokoro-82M-Android-Fixed/releases/).
