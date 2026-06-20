@@ -2,7 +2,7 @@
 A minimal Android demo app for **Kokoro-82M** TTS model in int8 quantization.
 
   Original version had a backend bug that closed the OrtSession after generating a single message, causing an error message to pop up after consecutive attempts to generate audio.
-  Original version also didn't fit my screen vertically in the Mixer tab, and could potentially not fit some screens vertically in the Home tab, so I decreased the height of the slider, the maxmimum line count of the Text to speak box to 10 in both, decreased the minimum to 1 in both, and also allowed the entire page to scroll up and down in the Mixer tab.
+  Original version also didn't fit my screen vertically in the Mixer tab, and could potentially not fit some screens vertically in the Home tab, so I decreased the height of the slider, the maxmimum line count of the Text to speak box to 10 in both, decreased the minimum to 1 in both, and also allowed the entire page to scroll up and down in both tabs in case even these vertical height optimizations aren't enough.
   The tab icons were slightly misleading: the Home and Build icons for "Basic" and "Mixer". I have now made them "Single-model" with the Voice Selection icon and "Multi-model" with the Merge icon.
   Many button labels were also misleading, like the "Apply Mix" button in the Mixer/Multi-model tab for example, which doesn't just apply the mix settings, but also generates audio from the text above and plays it.
   Speaking of this tab, I changed the default mix to some very unique voices for contrast and to show how the mix combines multiple qualities.
