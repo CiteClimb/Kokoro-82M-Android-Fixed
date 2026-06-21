@@ -16,7 +16,7 @@ A fixed version of the minimal Android demo app for **Kokoro-82M** TTS model in 
 2. Upgrade/downgrade to AGP 8.x (I used 8.13.2)
 3. Gradle Sync
    *(If you want to, modify the build and target SDK version in Project/app/build.gradle.kts)*
-4. Build
+4. Build APK file and click "[locate](this-link-is-just-for-formatting-purposes-because-the-locate-text-is-blue-in-the-android-studio-notification.lol)" to jump to output .apk file location
 
 ### Prebuilt .apk file
 See [release](https://github.com/CiteClimb/Kokoro-82M-Android-Fixed/releases/).
